@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!--  Main wrapper -->
+      <!--  Header End -->
+      <div class="container-fluid">
+        <!--  Row 1 -->
+        <div class="row">
+          <div class="col-lg-8 d-flex align-items-strech">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
+                  <div class="mb-3 mb-sm-0">
+                    <h5 class="card-title fw-semibold">Stock Holding Value</h5>
+                  </div>
+                  <div>
+                    <select class="form-select">
+                      <option value="1">Panel Stock Value</option>
+                      <option value="2">Inverter Stock Value</option>
+                      <option value="3">Cable Stock Value</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- Yearly Breakup -->
+                <div class="card overflow-hidden">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-9 fw-semibold">Yearly Earnings</h5>
+                    <div class="row align-items-center">
+                      <div class="col-8">
+                        <h4 class="fw-semibold mb-3">R16,327,498.52</h4>
+                        <div class="d-flex align-items-center mb-3">
+                          <span
+                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-arrow-up-left text-success"></i>
+                          </span>
+                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
+                          <p class="fs-3 mb-0">last year</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <div class="me-4">
+                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-2">2023</span>
+                          </div>
+                          <div>
+                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-2">2023</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="d-flex justify-content-center">
+                          <div id="breakup"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <!-- Monthly Earnings -->
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row alig n-items-start">
+                      <div class="col-8">
+                        <h5 class="card-title mb-9 fw-semibold"> Month To Date Income </h5>
+                        <h4 class="fw-semibold mb-3">R 600,625.00</h4>
+                        <div class="d-flex align-items-center pb-1">
+                          <span
+                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-arrow-down-right text-danger"></i>
+                          </span>
+                          <p class="text-dark me-1 fs-3 mb-0">-9%</p>
+                          <p class="fs-3 mb-0">last year</p>
+                        </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="d-flex justify-content-end">
+                          <div
+                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
+                            <i class="ti ti-currency-dollar fs-6"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="earning"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="card w-100">
+              <div class="card-body p-4">
+                <div class="mb-4">
+                  <h5 class="card-title fw-semibold">Recent Transactions</h5>
+                </div>
+                <ul class="timeline-widget mb-0 position-relative mb-n5">
+                  <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">09:30am</div>
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-primary flex-shrink-0 my-8"></span>
+                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                    </div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Payment received from Teak Place of R 25,000.00</div>
+                  </li>
+                  <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">12:00 am</div>
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                    </div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Payment was made of R 300,000.00 to Herholdts</div>
+                  </li>
+                    <li class="timeline-item d-flex position-relative overflow-hidden">
+                    <div class="timeline-time text-dark flex-shrink-0 text-end">2:00pm</div>
+                    <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                      <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                      <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                    </div>
+                    <div class="timeline-desc fs-3 text-dark mt-n1">Stock Delivery from Raystech Delivery Note (234)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="card w-100">
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold mb-4">Items</h5>
+                <div class="table-responsive">
+                  <table class="table text-nowrap mb-0 align-middle">
+                    <thead class="text-dark fs-4">
+                      <tr>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Item Code</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Item Name</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Cost Price</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">Selling Price</h6>
+                        </th>
+                        <th class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0">QTY in Stock</h6>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="border-bottom-0">
+                            <h6 class="fw-semibold mb-0">FLCOM-300/210</h6>
+                        </td>
+                        <td class="border-bottom-0">
+                            <h6 class="fw-semibold mb-1">300KWH 6000AH 52VDC LIFEPO4 BATTERY C/W COMMS AND BMS</h6>
+                            <span class="fw-normal">Catagory: Electrical</span>
+                        </td>
+                        <td class="border-bottom-0">
+                            <p class="mb-0 fw-normal">R 1,230,362.38</p>
+                        </td>
+                        <td class="border-bottom-0">
+                            <div class="d-flex align-items-center gap-2">
+                                <p class="mb-0 fw-normal">R 1,924,545.00</p>
+                            </div>
+                        </td>
+                        <td class="border-bottom-0">
+                            <h6 class="fw-semibold mb-0 fs-4">15</h6>
+                        </td>
+                        <tr>
+                            <td class="border-bottom-0">
+                                <h6 class="fw-semibold mb-0">VACON0100-3L-0750-7-ED</h6>
+                            </td>
+                            <td class="border-bottom-0">
+                                <h6 class="fw-semibold mb-1">710KW V100 GP ED VSD 525V 3PH IN / 3PH OUT IP21</h6>
+                                <span class="fw-normal">Catagory: Electrical</span>
+                            </td>
+                            <td class="border-bottom-0">
+                                <p class="mb-0 fw-normal">R 792,316.88</p>
+                            </td>
+                            <td class="border-bottom-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <p class="mb-0 fw-normal">R 1,095,583.13</p>
+                                </div>
+                            </td>
+                            <td class="border-bottom-0">
+                                <h6 class="fw-semibold mb-0 fs-4">8</h6>
+                            </td>
+                            <tr>
+                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">SW110-1000M R</h6></td>
+                        <td class="border-bottom-0">
+                            <h6 class="fw-semibold mb-1">10MM RED SOLAR CABLE /1000M</h6>
+                            <span class="fw-normal">Catagory: Cable</span>                          
+                        </td>
+                        <td class="border-bottom-0">
+                          <p class="mb-0 fw-normal">R 22,965.60</p>
+                        </td>
+                        <td class="border-bottom-0">
+                          <div class="d-flex align-items-center gap-2">
+                          <p class="mb-0 fw-normal">R24,572.92</p>
+                          </div>
+                        </td>
+                        <td class="border-bottom-0">
+                          <h6 class="fw-semibold mb-0 fs-4">300</h6>
+                          </td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+
+</html>
